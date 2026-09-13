@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "Bloat",
+    "slug": "bloat",
+    "scheme": "bloat",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "backgroundColor": "#FAF7F2"
+    },
+    "ios": {
+      "bundleIdentifier": "com.bloat.app",
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Bloat uses your camera to recognize meals so you can log them in seconds."
+      }
+    },
+    "android": {
+      "package": "com.bloat.app",
+      "permissions": ["CAMERA"]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Bloat uses your camera to recognize meals so you can log them in seconds."
+        }
+      ],
+      "expo-notifications"
+    ]
+  }
+}
