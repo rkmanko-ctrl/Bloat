@@ -16,6 +16,10 @@ export function TabNavigator() {
         tabBarActiveTintColor: colors.accent,
         tabBarInactiveTintColor: colors.textTertiary,
         tabBarStyle: { backgroundColor: colors.surface, borderTopColor: colors.border },
+        // Deliberately no icons — three clearly-labeled text tabs read fine
+        // at this scale, and skipping icons avoids the placeholder glyph
+        // React Navigation renders when no tabBarIcon is supplied.
+        tabBarIcon: () => null,
       }}
     >
       <Tab.Screen name="Today" component={TodayScreen} />
